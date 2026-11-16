@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BillKeeper Privacy Policy</title>
+<meta name="description" content="BillKeeper works entirely on your phone. No account, no internet permission, no data collected.">
+<style>
+  :root {
+    --bg: #0A0A0C; --card: #141416; --line: rgba(255,255,255,.12);
+    --text: #F5F5F7; --muted: #A1A1A6; --yellow: #FFD60A;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #F7F3EA; --card: #FFFFFF; --line: rgba(28,28,30,.12);
+            --text: #1C1C1E; --muted: #5E5A52; --yellow: #8A6500; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  header svg { width: 52px; height: 52px; border-radius: 13px; flex: none; }
+  header strong { font-size: 22px; letter-spacing: -.3px; }
+  h1 { font-size: 34px; line-height: 1.15; letter-spacing: -.8px; margin: 22px 0 6px; }
+  .date { color: var(--muted); font-size: 15px; margin: 0 0 22px; }
+  .summary {
+    background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--yellow);
+    border-radius: 14px; padding: 16px 18px; margin: 0 0 28px;
+  }
+  .summary ul { margin: 6px 0 0; padding-left: 20px; }
+  h2 { font-size: 21px; letter-spacing: -.3px; margin: 32px 0 8px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  code { font-size: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; }
+  a { color: var(--yellow); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  @media print { body { background: #fff; color: #000; } .summary, code { background: #fff; } }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <svg viewBox="10 10 88 88" aria-hidden="true">
+      <rect x="0" y="0" width="108" height="108" fill="#0A0A0C"/>
+      <path fill="#FFD60A" d="M54,25 L77,33.5 L77,51.5 C77,66.5 67.2,77.8 54,83 C40.8,77.8 31,66.5 31,51.5 L31,33.5 Z"/>
+      <path fill="#0A0A0C" d="M43.5,37 L64.5,37 L64.5,66 L61,63.2 L57.5,66 L54,63.2 L50.5,66 L47,63.2 L43.5,66 Z"/>
+      <path fill="#FFD60A" d="M47,42.5h14v2.6h-14z M47,48h10.5v2.6h-10.5z M47,53.5h14v2.6h-14z"/>
+    </svg>
+    <strong>BillKeeper</strong>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective date: 16 November 2026 · Applies to BillKeeper for Android, version 1.0.0 and later</p>
+
+  <section class="summary" aria-label="Summary">
+    <strong>In short:</strong> BillKeeper works entirely on your phone.
+    <ul>
+      <li>No account, no sign-in, no servers.</li>
+      <li>The app does not have Android's internet permission, so neither the app nor any library inside it can send data off your device.</li>
+      <li>We collect no personal data, show no ads, and use no analytics or tracking.</li>
+      <li>Your products, bills and settings stay in the app's private storage until you delete them.</li>
+    </ul>
+  </section>
+
+  <h2>1. Who we are</h2>
+  <p>BillKeeper ("the app", "we") is a warranty and bill organiser published on Google Play by
+    <strong>ShareAProfit</strong>. Questions about this policy: <a href="mailto:influbriz@gmail.com">influbriz@gmail.com</a>.</p>
+
+  <h2>2. Information the app stores on your device</h2>
+  <p>When you use BillKeeper, the following is saved <strong>only on your phone</strong>, inside the app's private storage, which other apps cannot read:</p>
+  <ul>
+    <li>Product details you enter: name, brand, model, serial or IMEI number, category, purchase date, price, store, warranty period and notes.</li>
+    <li>Copies of the bill photos and PDF files you attach.</li>
+    <li>Your reminder choices and app settings (for example theme and reminder time).</li>
+  </ul>
+  <p>This data is kept in an on-device SQLite database and a private files folder. It is never sent to us or to anyone else, and we have no way to access it.</p>
+
+  <h2>3. Bill scanning (on-device text recognition)</h2>
+  <p>The optional <em>Scan &amp; Auto-Fill</em> feature reads a bill image or PDF using Google ML Kit text recognition with a model that is <strong>built into the app and runs on your phone</strong>. The image and the text it finds are used only to suggest values for the form, which you check before saving. They are not uploaded.</p>
+  <p class="muted">Google's ML Kit library can normally send anonymous usage diagnostics to Google. BillKeeper removes the internet permission from the app, so Android blocks any such transfer and nothing is sent.</p>
+
+  <h2>4. Permissions</h2>
+  <table>
+    <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Notifications<br><code>POST_NOTIFICATIONS</code></td><td>To remind you before a warranty ends. You can turn this off in Android settings.</td></tr>
+      <tr><td>Run at startup<br><code>RECEIVE_BOOT_COMPLETED</code></td><td>To re-schedule your reminders after the phone restarts.</td></tr>
+      <tr><td>Vibration<br><code>VIBRATE</code></td><td>So reminder notifications can vibrate.</td></tr>
+    </tbody>
+  </table>
+  <p>Taking a bill photo opens Android's own camera app, and choosing a photo or PDF uses Android's own picker. BillKeeper only receives the single file you choose and does not hold camera, storage, location, contacts or microphone permissions.</p>
+
+  <h2>5. Sharing and third parties</h2>
+  <p>We do not sell, share or transfer your data, because we never receive it. The app contains no advertising, analytics, crash-reporting or tracking services.</p>
+
+  <h2>6. Backups</h2>
+  <p>If you tap <em>Export backup</em>, the app creates a ZIP file containing your products, settings and bill files, and opens Android's share menu. <strong>You choose where it goes</strong> (for example Google Drive, email or your computer). Once you share it, that copy is handled by the service you picked under its own privacy policy. Backup files are <strong>not encrypted</strong>, so keep them somewhere private. <em>Restore from backup</em> only reads a ZIP file you select.</p>
+
+  <h2>7. Keeping and deleting your data</h2>
+  <ul>
+    <li>Data stays on your phone until you delete it.</li>
+    <li>Deleting a product removes its details, reminders and stored bill files.</li>
+    <li>Uninstalling the app, or using <em>Clear storage</em> in Android settings, deletes everything the app stored.</li>
+    <li>Backup ZIP files you exported are not removed automatically; delete them wherever you saved them.</li>
+  </ul>
+  <p>Because we hold no data about you, there is nothing for us to delete on request.</p>
+
+  <h2>8. Security</h2>
+  <p>Your data is protected by Android's app sandbox. We recommend using a screen lock on your phone. Exported backups are outside the app's protection, as described above.</p>
+
+  <h2>9. Children</h2>
+  <p>BillKeeper is not directed at children under 13 and does not knowingly collect personal information from anyone.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted at this address with a new effective date, and the in-app policy will be updated in the same release.</p>
+
+  <h2>11. Contact</h2>
+  <p><strong>ShareAProfit</strong><br>Email: <a href="mailto:influbriz@gmail.com">influbriz@gmail.com</a></p>
+
+  <footer>© 2026 ShareAProfit. BillKeeper — Warranty &amp; Bill Reminder.</footer>
+</main>
+</body>
+</html>
